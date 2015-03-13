@@ -9,7 +9,7 @@ import datetime
 
 # create absolute references 
 
-sfile = "rawdata-nopush-date.csv"
+sfile = "sample.csv"
 tfile = open("date.csv", "w")
 group = {}
 
@@ -42,9 +42,8 @@ with open(sfile,'rU') as source:
             target.writerow(entry)
             group.update({username:entry_d}) 
             
-        else:
             
-           group.update({username:entry_d}) 
+        group.update({username:entry_d}) 
 
 print "DONE"
 
